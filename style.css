@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    width: 100;
+    height: 100vh;
+    background-image: url(images/Untitled\ design\ \(2\).png);
+    background-size: cover;
+    background-position: center;
+
+}
+ .container{
+    padding: 20px,20%;
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px,10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(235, 43, 43);
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.5s;
+    
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+.header-text{
+    margin-top: 60px;
+    font-size: 20px;
+    padding-left: 20%;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 40px;
+    
+}
+.header-text h1 span{
+    color: goldenrod;
+}
+#about{
+    padding: 80px;
+    color: #ababab;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15%;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+.Hello{
+    margin-top: 25px;
+    font-size: 23px;
+    color:beige;
+   
+}
+.Hello2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(210, 44, 44);
+    font-size: 26px;
+    margin-top: 20px;
+}
+#services{
+    padding: 30px,0px;
+    margin-left: 80px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-right: 80px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    
+}
+.services-list div h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.services-list div p{
+    font-size: 15px;
+    text-align: center;
+}
+
+
